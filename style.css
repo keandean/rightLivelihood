@@ -30,7 +30,20 @@ h2 {
 }
 
 img {
-  display: inline;
+  display: inline-block;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid #824404;
+  background: #efe4af;
+  padding: 10px 20px;
+  color: #824404;
+}
+
+button:hover {
+  border-radius: 7px;
+  border: #b4801e;
 }
 
 .container {
