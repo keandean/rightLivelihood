@@ -13,6 +13,7 @@ body {
   margin: 75px 75px;
   scroll-behavior: smooth;
   height: auto;
+  background-color: #f9f5e1;
 }
 
 :target {
@@ -22,6 +23,7 @@ h1 {
   width: 500px;
   font-size: 2.625em;
 }
+
 h2 {
   text-align: left;
   width: 500px;
@@ -31,6 +33,11 @@ h2 {
 
 img {
   display: inline-block;
+}
+.profileImg {
+  margin: 40px 10px 10px 10px;
+  border-radius: 10px;
+  border: 1px solid #824404;
 }
 
 button {
@@ -47,13 +54,20 @@ button:hover {
 }
 
 .container {
-  background-color: white;
+  background-color: #f9f5e1;
   background-size: 300px 300px;
   display: flex;
   width: 90vw;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  border-radius: 10px;
+}
+
+.panel.active img {
+  transition-duration: 1500ms;
+  transition-timing-function: ease-in-out;
+  transform: translateX(575%);
 }
 
 .panel {
@@ -71,15 +85,16 @@ button:hover {
   position: relative;
   transition: flex 0.7s ease-in;
   outline: black;
+  background-image: linear-gradient(#efe4af, #ad7b15, #824404);
 }
 
 .panel h3 {
-  font-size: 24px;
+  font-size: 16px;
   position: top;
   bottom: 20px;
   left: 20px;
   margin: 10px;
-  opacity: 0;
+  opacity: 1;
   color: black;
 }
 
@@ -90,8 +105,9 @@ button:hover {
 }
 
 .panel.active li {
+  transform: translateY(-900%);
   opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+  transition: opacity 0.7s ease-in 0.7s;
 }
 .panel button {
   margin: 10px;
@@ -101,8 +117,9 @@ button:hover {
 }
 
 .panel.active button {
+  transform: translateY(-500%);
   opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+  transition: opacity 1s ease-in 0.7s;
 }
 
 .panel.active {
