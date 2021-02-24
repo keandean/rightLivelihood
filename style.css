@@ -4,6 +4,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  /* scroll-behavior: smooth; */
+}
 
 body {
   font-family: "EB Garamond", serif;
@@ -11,7 +14,6 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 75px 75px;
-  scroll-behavior: smooth;
   height: auto;
   background-color: #f9f5e1;
 }
@@ -22,6 +24,7 @@ body {
 h1 {
   width: 500px;
   font-size: 2.625em;
+  display: inline;
 }
 
 h2 {
@@ -31,9 +34,6 @@ h2 {
   font-size: medium;
 }
 
-img {
-  display: inline-block;
-}
 .profileImg {
   margin: 40px 10px 10px 10px;
   border-radius: 10px;
@@ -48,9 +48,8 @@ button {
   color: #824404;
 }
 
-button:hover {
-  border-radius: 7px;
-  border: #b4801e;
+.panel.active button:hover {
+  background: #f9f5e1;
 }
 
 .container {
@@ -64,26 +63,37 @@ button:hover {
   border-radius: 10px;
 }
 
+/* main {
+  height: 100vh;
+  scroll-snap-type: block mandatory;
+  scroll-padding: 100em;
+  overflow-y: scroll;
+}
+
+.shadow {
+  scroll-snap-align: end;
+  scroll-margin-top: 10em;
+} */
 .panel.active img {
-  transition-duration: 1500ms;
-  transition-timing-function: ease-in-out;
-  transform: translateX(575%);
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
+  transform: translateX(320%);
 }
 
 .panel {
   box-sizing: border-box;
   border: 1px solid #969696;
-  background-size: auto 300%;
+  background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
   height: 30vh;
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
-  flex: 0.75;
+  flex: 2;
   margin: 10px;
   position: relative;
-  transition: flex 0.7s ease-in;
+  transition: flex 0.7s ease;
   outline: black;
   background-image: linear-gradient(#efe4af, #ad7b15, #824404);
 }
@@ -124,6 +134,7 @@ button:hover {
 
 .panel.active {
   flex: 5;
+  cursor: default;
 }
 
 .panel.active h3 {
@@ -135,6 +146,7 @@ button:hover {
   box-shadow: 0 0 20px rgb(0, 0, 0, 0.3);
   padding: 20px;
   margin: 10px;
+  scroll-snap-align: center;
 }
 
 @media (max-width: 480px) {
