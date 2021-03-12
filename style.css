@@ -222,14 +222,30 @@ a .top:hover {
   }
   .seeking {
     font-size: 40%;
+    margin: 0 auto
   }
   .hidden {
     text-align: center;
     width: 100%;
+    position: absolute;
+    left: 0;
+    top: 80px;
+  }
+  .shadow {
+    margin: 0;
+  }
+  .shadow p {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .profileImg {
+    margin: 30px auto;
   }
   .hidden a {
     display: block;
     border-bottom: 1px solid #61aada;
+    
+}
   }
 
   .side-bar {
