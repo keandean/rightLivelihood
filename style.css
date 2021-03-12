@@ -216,6 +216,9 @@ a .top:hover {
 }
 
 @media only screen and (max-width: 1000px) {
+  .flex {
+    display: block;
+  }
   label {
     display: block;
     cursor: pointer;
@@ -237,9 +240,11 @@ a .top:hover {
   .shadow p {
     width: 100%;
     margin: 0 auto;
+    display: block;
   }
   .profileImg {
     margin: 30px auto;
+    display: block;
   }
   .hidden a {
     display: block;
