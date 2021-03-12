@@ -23,7 +23,7 @@ header {
   margin: 0 0 0 0;
   height: 80px;
   display: flex;
-  background-color: #61aada;
+  background-color: #0d2742;
   color: white;
   font-size: 40px;
   position: -webkit-sticky;
@@ -62,13 +62,14 @@ nav {
   z-index: 1;
   top: 80px;
   left: 0;
-  background-color: #d2d9d1;
+  background-color: #e0f1f9;
   padding-top: 10px;
+  text-align: center;
 }
 
 .side-bar ul {
   font-size: 18px;
-  margin: 10px 20px;
+  margin: 30px 20px 0px;
   list-style: none;
 }
 
@@ -120,19 +121,24 @@ p {
 h1 {
   font-size: 2.625em;
   margin: 0px 20%;
-  padding: 20px;
+  padding: 20px 0px 0px 30px;
 }
 
 h2 {
   margin: 0 21.5%;
-  padding: 10px 20px 0 0;
+  padding: 10px 20px 0px 10px;
   font-family: "open sans";
   font-size: medium;
 }
 
 h3 {
-  padding: 10px 30px;
-  margin: 0 0;
+  padding: 10px 10px;
+}
+.seeking {
+  margin: 0 auto;
+}
+.outer {
+  padding: 0 10px;
 }
 
 .container {
@@ -140,17 +146,17 @@ h3 {
   overflow: scroll;
   scroll-snap-type: y;
   scroll-padding: 160px;
-  padding: 100px 0 0 0;
+  padding: 98px 0 0 0;
 }
 
 .title {
   display: block;
-  background-color: #d2d9d1;
+  background-color: #bdb5b2;
 }
 
 .flex {
   display: flex;
-  justify-content: space-around;
+
   scroll-snap-align: start;
 }
 
@@ -166,10 +172,20 @@ h3 {
 }
 
 .profileImg {
-  margin: 30px 70px 10px 10px;
+  margin: 30px 0px 10px 10px;
   border-radius: 10px;
   border: 1px solid #61aada;
   object-fit: cover;
+}
+
+.webLink {
+  margin: 0px 10px;
+  text-decoration: none;
+  color: #0d2742;
+  font-weight: bold;
+}
+.webLink:hover {
+  color: #61aada;
 }
 
 .shadow {
@@ -180,20 +196,16 @@ h3 {
   scroll-padding: 300px;
 }
 
-button {
-  border-radius: 5px;
-  border: none;
-  background: none;
-  padding: 10px 20px;
-  color: black;
-  float: center;
-  padding: 10px 30px 0px 0;
-  width: 100%;
-  font-weight: 30;
+.teachings {
+  padding: 10px 0px;
+}
+
+ul {
+  padding-top: 0;
 }
 
 a .top:hover {
-  color: #d2d9d1;
+  color: #0d2742;
   cursor: pointer;
   border: none;
 }
@@ -216,6 +228,9 @@ a .top:hover {
 }
 
 @media only screen and (max-width: 1000px) {
+  .side-bar {
+    display: none;
+  }
   .flex {
     display: block;
   }
@@ -225,7 +240,7 @@ a .top:hover {
   }
   .seeking {
     font-size: 40%;
-    margin: 0 auto
+    margin: 0 auto;
   }
   .hidden {
     text-align: center;
@@ -233,6 +248,25 @@ a .top:hover {
     position: absolute;
     left: 0;
     top: 80px;
+  }
+  h1 {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 0px;
+    display: block;
+  }
+  .outer {
+    width: 100%;
+    margin: 0 10px;
+    display: block;
+  }
+  .career {
+    margin: 0 10px;
+  }
+  .career p {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
   }
   .shadow {
     margin: 0;
@@ -246,24 +280,15 @@ a .top:hover {
     margin: 30px auto;
     display: block;
   }
+  .webLink {
+    margin: 0px auto;
+  }
   .hidden a {
     display: block;
     border-bottom: 1px solid #61aada;
-    
+  }
 }
-  }
 
-  .side-bar {
-    text-align: center;
-    width: 100%;
-    display: none;
-  }
-  .side-bar a {
-    display: block;
-    border-bottom: 1px solid #eaeaeb;
-    margin: 0;
-  }
-  #toggle:checked + .hidden {
-    display: block;
-  }
+#toggle:checked + .hidden {
+  display: block;
 }
