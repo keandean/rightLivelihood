@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "public",
+    "site": "seekingmeditation-f55f9",
+    "ignore": [
+      "firebase.json",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "index.html"
+      }
+    ]
+  }
+}
