@@ -1,11 +1,18 @@
 function toggleMenu(){
+    console.log('toggle Menu')
     let hidden = document.getElementById('hiddenMenu');
-    if (hidden.style.display == 'none'){
-        hidden.style.display = 'block';
-    }else {hidden.style.display = 'none';
+    if (hidden.classList.contains('hiddenClass')) {
+        hidden.classList.remove('hiddenClass');
+    }
+    else {
+        hidden.classList.add('hiddenClass');
+    }
+    // if (hidden.style.display == 'none'){
+    //     hidden.style.display = 'block';
+    // }else {hidden.style.display = 'none';
 
     }
-}
+
 
 // const panels = document.querySelectorAll('.panel')
 // const profile = document.querySelectorAll('.profileImg')
