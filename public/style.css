@@ -243,6 +243,9 @@ a .top:hover {
     font-size: 40%;
     margin: 0 auto;
   }
+  .hiddenClass {
+    display: none;
+  }
   .hidden {
     text-align: center;
     width: 100%;
