@@ -1,5 +1,4 @@
 function toggleMenu(){
-    console.log('toggle Menu')
     let hidden = document.getElementById('hiddenMenu');
     if (hidden.classList.contains('hiddenClass')) {
         hidden.classList.remove('hiddenClass');
