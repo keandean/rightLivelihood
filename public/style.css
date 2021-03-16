@@ -5,6 +5,7 @@
 }
 body {
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -148,6 +149,12 @@ h3 {
   scroll-snap-type: y;
   scroll-padding: 160px;
   padding: 98px 0 0 0;
+  padding-bottom: 10px;
+  background-size: 300px 1000px;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  border-radius: 10px;
 }
 
 .title {
@@ -169,7 +176,8 @@ h3 {
 
 .mainImg {
   padding: 10px;
-  margin: 20px 21.5%;
+  margin: 30px auto;
+  object-fit: cover;
 }
 
 .profileImg {
@@ -211,12 +219,15 @@ a .top:hover {
   border: none;
 }
 
-.container {
-  background-size: 300px 1000px;
-  display: flex;
-  flex-direction: column;
-  width: 90vw;
-  border-radius: 10px;
+footer {
+  width: 100%;
+  margin-top: -10px;
+  height: 50px;
+  background-color: #0d2742;
+  color: white;
+  clear: both;
+  position: relative;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -225,6 +236,26 @@ a .top:hover {
   }
   .flex {
     flex-direction: column;
+  }
+  #btnscroll {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: pink;
+    bottom: 100px;
+    right: 100px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  #btnscroll:active {
+    background: #e75480;
   }
 }
 
@@ -243,6 +274,7 @@ a .top:hover {
     font-size: 40%;
     margin: 0 auto;
   }
+
   .hiddenClass {
     display: none;
   }
@@ -290,6 +322,13 @@ a .top:hover {
   .hidden a {
     display: block;
     border-bottom: 1px solid #61aada;
+    padding: 10px 0;
+  }
+  .mainImg {
+    padding: 10px;
+    margin: 30px auto;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
