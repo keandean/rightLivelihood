@@ -141,6 +141,7 @@ h3 {
 }
 .outer {
   padding: 0 10px;
+  font-size: 20px;
 }
 
 .container {
@@ -237,6 +238,13 @@ footer {
   .flex {
     flex-direction: column;
   }
+
+  .scroll-to-top {
+    position: absolute;
+    left: 13px;
+    top: 11px;
+  }
+
   #btnscroll {
     position: fixed;
     width: 50px;
@@ -254,6 +262,7 @@ footer {
     font-size: 30px;
     cursor: pointer;
   }
+
   #btnscroll:active {
     background: #e75480;
   }
