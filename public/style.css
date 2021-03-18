@@ -8,6 +8,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 html {
@@ -30,6 +31,15 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+}
+
+.conclusion {
+  margin: 20px;
+  padding: 5px;
+}
+
+.alan {
+  padding-top: 10px;
 }
 
 #toggle {
@@ -85,7 +95,7 @@ nav {
 
 .side-bar a {
   text-decoration: none;
-  color: black;
+  color: #0d2742;
 }
 
 .side-bar a:hover {
@@ -134,7 +144,8 @@ h2 {
 }
 
 h3 {
-  padding: 10px 10px;
+  padding: 0;
+  margin: 0;
 }
 .seeking {
   margin: 0 auto;
@@ -145,11 +156,9 @@ h3 {
 }
 
 .container {
-  max-height: 100vh;
-  overflow: scroll;
+  max-height: 100%;
   scroll-snap-type: y;
-  scroll-padding: 160px;
-  padding: 98px 0 0 0;
+  scroll-padding: 200px;
   padding-bottom: 10px;
   background-size: 300px 1000px;
   display: flex;
@@ -161,12 +170,13 @@ h3 {
 .title {
   display: block;
   background-color: #bdb5b2;
+  padding: 10px;
 }
 
 .flex {
   display: flex;
-
   scroll-snap-align: start;
+  margin-bottom: 10px;
 }
 
 .career {
@@ -206,18 +216,27 @@ h3 {
   scroll-padding: 300px;
 }
 
+.list {
+  padding-left: 10px;
+}
+
 .teachings {
   padding: 10px 0px;
 }
 
 ul {
   padding-top: 0;
+  margin-left: 15px;
 }
 
 a .top:hover {
   color: #0d2742;
   cursor: pointer;
   border: none;
+}
+.copy {
+  color: white;
+  margin-top: 10px;
 }
 
 footer {
@@ -227,11 +246,16 @@ footer {
   background-color: #0d2742;
   color: white;
   clear: both;
-  position: relative;
+  position: absolute;
+  bottom: 0;
   text-align: center;
 }
 
 @media (max-width: 600px) {
+  .container {
+    width: 100vw;
+  }
+
   h1 {
     font-size: 1.5em;
   }
@@ -251,7 +275,7 @@ footer {
     height: 50px;
     background: pink;
     bottom: 100px;
-    right: 100px;
+    right: 5px;
     height: 50px;
     border-radius: 50%;
     border: none;
