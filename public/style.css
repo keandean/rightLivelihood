@@ -154,11 +154,14 @@ h3 {
   padding: 0 10px;
   font-size: 20px;
 }
+section {
+  padding-top: 86px;
+  padding-bottom: 20px;
+}
 
 .container {
   max-height: 100%;
   scroll-snap-type: y;
-  scroll-padding: 200px;
   padding-bottom: 10px;
   background-size: 300px 1000px;
   display: flex;
@@ -302,6 +305,7 @@ footer {
   label {
     display: block;
     cursor: pointer;
+    position: absolute;
   }
   .seeking {
     font-size: 40%;
@@ -326,7 +330,8 @@ footer {
   }
   .outer {
     width: 100%;
-    margin: 0 10px;
+    padding: 0 10px;
+    margin: 0;
     display: block;
   }
   .career {
